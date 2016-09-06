@@ -323,3 +323,14 @@ s, i, em {
     _filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src=../images/hover.png);
     _background:none;
 }
+
+/*文字阴影特效*/
+.drop-shadow {
+    padding: 14px;
+    background-color: #fff;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.3),0 0 40px rgba(0,0,0,0.1) inset;
+}
+.drop-shadow:hover {
+    transition: all 0.6s ease;
+    box-shadow: 8px 8px 20px rgba(0,0,0,0.6);
+}

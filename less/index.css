@@ -42,6 +42,7 @@
   font-size: 18px;
   padding: 60px 0;
   position: relative;
+  box-shadow: #0f0f0f;
 }
 .fm-header p span {
   height: 1px;

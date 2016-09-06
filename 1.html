@@ -4,89 +4,98 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <style>
-        .letter{
-            display: inline-block;
-            font-weight: 900;
-            font-size: 8em;
-            margin: 0.2em;
+        body {
+            padding:20px 0 0;
+            font:14px/1.5 Arial;
+            text-align:center;
+            color: #333333;
+            background-color: #CCCCCC;
+        }
+        .drop-shadow {
             position: relative;
-            color: #00B4F1;
-            transform-style: preserve-3d;
-            z-index: 1;
+            width: 45%;
+            padding: 14px;
+            margin:28px auto 70px;
+            background-color: #fff;
+            box-shadow: 0 1px 4px rgba(0,0,0,0.3),0 0 40px rgba(0,0,0,0.1) inset;
         }
+        .drop-shadow::before,.drop-shadow::after {
+            content: "";
+            position: absolute;
+            bottom:15px;
+            left: 10px;
+            background-color: #ffffff;
+            z-index: -2;
+            width: 50%;
+            height: 20%;
+        }
+        .drop-shadow::after {
+            right: 10px;
+            left:auto;
+        }
+        .round {
+            border-radius: 4px;
+        }
+        .round::before,.round::after {
+            max-width:300px;
+            box-shadow: 0 15px 10px rgba(0,0,0,0.7);
+            transform:rotate(-3deg);
+        }
+        .round::after {
+            transform:rotate(3deg);
+        }
+        .curls::before,.curls::after {
+            bottom:12px;
+            max-width:200px;
+            height:55%;
+            box-shadow: 0 8px 16px rgba(0,0,0,0.4);
+            transform:skew(-8deg) rotate(-4deg);
 
-        .letter:before, .letter:after{
-            position:absolute;
-            content: attr(data-letter);
-            transform-origin: top left;
-            top:0;
-            left:0;
         }
-        .letter, .letter:before, .letter:after{
-            transition: all 0.3s ease-in-out;
+        .curls::after {
+            transform: skew(8deg) rotate(4deg);
         }
-        .letter:before{
-            color: #fff;
-            text-shadow:
-                    -1px 0px 1px rgba(255,255,255,.8),
-                    1px 0px 1px rgba(0,0,0,.8);
-            z-index: 3;
-            transform:
-                    rotateX(0deg)
-                    rotateY(-15deg)
-                    rotateZ(0deg);
+        .curls {
+            border:1px solid #EFEFEF;
+            border-radius: 0 0 120px 120px/0 0 6px 6px;
         }
-        .letter:after{
-            color: rgba(0,0,0,.11);
-            z-index:2;
-            transform:
-                    scale(1.08,1)
-                    rotateX(0deg)
-                    rotateY(0deg)
-                    rotateZ(0deg)
-                    skew(0deg,1deg);
+        .perspective::before {
+            left: 28px;
+            bottom:8px;
+            max-width:200px;
+            height: 25%;
+            box-shadow: -60px 5px 8px rgba(0,0,0,0.4);
+            transform:skew(50deg);
         }
-        .letter:hover:before{
-            color: #fafafa;
-            transform:
-                    rotateX(0deg)
-                    rotateY(-40deg)
-                    rotateZ(0deg);
-        }
-        .letter:hover:after{
-            transform:
-                    scale(1.08,1)
-                    rotateX(0deg)
-                    rotateY(40deg)
-                    rotateZ(0deg)
-                    skew(0deg,22deg);
+        .raised::before {
+            width:auto;
+            right: 10px;
+            left: 10px;
+            bottom:0;
+            box-shadow: 0 8px 10px rgba(0,0,0,0.5);
         }
     </style>
 </head>
 <body>
-<div class="foo">
-    <span class="letter" data-letter="A">A</span>
-    <span class="letter" data-letter="B">B</span>
-    <span class="letter" data-letter="C">C</span>
-    <span class="letter" data-letter="D">D</span>
-    <span class="letter" data-letter="E">E</span>
-    <span class="letter" data-letter="F">F</span>
-    <span class="letter" data-letter="G">G</span>
-    <span class="letter" data-letter="H">H</span>
-    <span class="letter" data-letter="I">I</span>
-    <span class="letter" data-letter="L">L</span>
-    <span class="letter" data-letter="M">M</span>
-    <span class="letter" data-letter="N">N</span>
-    <span class="letter" data-letter="O">O</span>
-    <span class="letter" data-letter="P">P</span>
-    <span class="letter" data-letter="Q">Q</span>
-    <span class="letter" data-letter="R">R</span>
-    <span class="letter" data-letter="S">S</span>
-    <span class="letter" data-letter="T">T</span>
-    <span class="letter" data-letter="U">U</span>
-    <span class="letter" data-letter="V">V</span>
-    <span class="letter" data-letter="Z">Z</span>
+<div class="drop-shadow round">
+    <h1>CSS drop-shadows without images</h1>
+    <p>No extra markup, fluid, all modern browsers</p>
 </div>
+
+<div class="drop-shadow curls">
+    <h1>Some curls</h1>
+    <p>No extra markup, all modern browsers</p>
+</div>
+
+<div class="drop-shadow perspective">
+    <h1>Some perspective</h1>
+    <p>No extra markup, all modern browsers</p>
+</div>
+
+<div class="drop-shadow raised">
+    <h1>Raised box</h1>
+    <p>No extra markup, all modern browsers</p>
+
 </body>
 </html>
 
