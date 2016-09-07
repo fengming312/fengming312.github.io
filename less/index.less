@@ -5,9 +5,24 @@
   margin-right: auto;
   margin-left: auto;
 }
+@media (max-width: 460px) {
+  .fm-info {
+    width: 250px!important;
+    padding: 30px 0 !important;
+  }
+  .about-grid h4 {
+    margin-top:20px;
+  }
+  .fm-name {
+    font-size: 0.5em;
+    width: 100%!important;
+    text-align: center;
+  }
+}
 @media (min-width: 768px) {
   .container {
     width: 750px;
+
   }
 }
 @media (min-width: 992px) {
@@ -26,11 +41,7 @@
   .container {
     .navbar-collapse {
       .ribbon {
-        margin:0 auto;
-        width: 800px;
-        height: 200px;
-        margin-top:20px;
-        display: block;
+
       }
     }
   }
@@ -45,7 +56,7 @@
     text-align: center;
     width: 400px;
     font-size: 18px;
-    padding:60px 0;
+    padding:100px 0;
     position: relative;
     box-shadow: #0f0f0f;
     span {
@@ -53,11 +64,11 @@
       width: 400px;
       background-color: #000;
       position: absolute;
-      top: 40px;
+      top: 80px;
       left: -80%;
     }
     .line2 {
-      top:100px;
+      top:140px;
       left:70%;
     }
   }
@@ -69,7 +80,7 @@
       margin:0 auto;
       transition: all 1s;
     }
-    img:hover,img.hover {
+    img:hover{
       width: 253px;
       height: 440px;
     }
@@ -106,6 +117,8 @@
   }
   .about-grids {
     margin-top: 60px;
+    opacity: 0.2;
+    transition:all 2s;
     h4 {
       font-family: 'Jockey One', sans-serif;
       text-align: left;
@@ -120,6 +133,9 @@
       line-height: 1.8em;
       padding: 2em 0 0 0;
     }
+  }
+  .grids-hover {
+    opacity: 1;
   }
 }
 
@@ -137,6 +153,18 @@
     font-size: 44px;
     text-align: center;
     font-weight: 600;
+    position: relative;
+    span {
+      width: 300px;
+      height: 250px;
+      background:url("../images/dance.gif");
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      opacity: 0.2;
+      transition: all 3s linear;
+    }
   }
   .study2 {
     h4 {

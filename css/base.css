@@ -150,64 +150,80 @@ s, i, em {
 .ribbon {
     display:inline-block;
     font-size: 20px;
+    width: 100%;
 }
-
-.ribbon:after, .ribbon:before {
-    margin-top:0.5em;
-    content: "";
-    float:left;
-    border:1.5em solid #fff;
-}
-
-.ribbon:after {
-    border-right-color:transparent;
-}
-
-.ribbon:before {
-    border-left-color:transparent;
-}
-
-.ribbon a:link, .ribbon a:visited {
-    color:#000;
-    text-decoration:none;
-    float:left;
-    height:3.5em;
-    overflow:hidden;
-}
-
 .ribbon span {
-    background:#fff;
-    display:inline-block;
-    line-height:3em;
-    padding:0 2.5em;
-    margin-top:0.5em;
-    position:relative;
-    transition: all 1s;
+    padding:10px;
+    display: block;
+}
+@media (min-width: 768px) {
+    .ribbon {
+        font-size: 20px;
+        width: 800px;
+        margin:0 auto;
+        height: 100px;
+        margin-top:20px;
+        display: block;
+    }
 
+    .ribbon:after, .ribbon:before {
+        margin-top:0.5em;
+        content: "";
+        float:left;
+        border:1.5em solid #fff;
+    }
+
+    .ribbon:after {
+        border-right-color:transparent;
+    }
+
+    .ribbon:before {
+        border-left-color:transparent;
+    }
+
+    .ribbon a:link, .ribbon a:visited {
+        color:#000;
+        text-decoration:none;
+        float:left;
+        height:3.5em;
+        overflow:hidden;
+    }
+
+    .ribbon span {
+        background:#fff;
+        display:inline-block;
+        line-height:3em;
+        padding:0 2.5em;
+        margin-top:0.5em;
+        position:relative;
+        transition: all 1s;
+
+    }
+
+    .ribbon a:hover span {
+        background:#00B4F1;
+        margin-top:0;
+    }
+
+    .ribbon span:before {
+        content: "";
+        position:absolute;
+        top:3em;
+        left:0;
+        border-right:0.5em solid #9B8651;
+        border-bottom:0.5em solid #fff;
+    }
+
+    .ribbon span:after {
+        content: "";
+        position:absolute;
+        top:3em;
+        right:0;
+        border-left:0.5em solid #9B8651;
+        border-bottom:0.5em solid #fff;
+    }
 }
 
-.ribbon a:hover span {
-    background:#00B4F1;
-    margin-top:0;
-}
-
-.ribbon span:before {
-    content: "";
-    position:absolute;
-    top:3em;
-    left:0;
-    border-right:0.5em solid #9B8651;
-    border-bottom:0.5em solid #fff;
-}
-
-.ribbon span:after {
-    content: "";
-    position:absolute;
-    top:3em;
-    right:0;
-    border-left:0.5em solid #9B8651;
-    border-bottom:0.5em solid #fff;
-}
 
 /*LOGO部分*/
 .letter{
@@ -333,7 +349,7 @@ s, i, em {
     box-shadow: 0 1px 4px rgba(0,0,0,0.3),0 0 40px rgba(0,0,0,0.1) inset;
     transition: all 0.6s ease;
 }
-.drop-shadow:hover {
+.drop-shadow:hover , .about-hover{
 
     box-shadow: 8px 8px 20px rgba(0,0,0,0.6);
 }
