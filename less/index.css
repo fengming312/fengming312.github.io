@@ -61,6 +61,12 @@
   width: 230px;
   height: 400px;
   margin: 0 auto;
+  transition: all 1s;
+}
+.fm-header .fm-image img:hover,
+.fm-header .fm-image img.hover {
+  width: 253px;
+  height: 440px;
 }
 .about {
   background-color: #F5F5F5;
@@ -127,6 +133,9 @@
   padding-bottom: 9px;
   font-size: 1.2em;
   color: #000;
+}
+.skills .study2 .progress:hover .progress-bar {
+  width: 100%!important;
 }
 .interest {
   background-color: #ECECEC;
