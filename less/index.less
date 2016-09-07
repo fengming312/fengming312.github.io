@@ -37,11 +37,23 @@
 }
 .fm-nav {
   background-color: #ECECEC;
-  height: 150px;
   .container {
-    .navbar-collapse {
-      .ribbon {
-
+    .toTop {
+      a {
+        background-image: url(../images/share.png);
+        background-repeat: no-repeat;
+        display: none;
+        width: 30px;
+        height: 30px;
+        background-position: 0 -120px;
+        position: fixed;
+        bottom: 100px;
+        right: 100px;
+        z-index: 5;
+        &:hover {
+          background-position: -30px -120px;
+          transition: all 0.5s;
+        }
       }
     }
   }
@@ -182,6 +194,7 @@
 .interest {
   background-color: #ECECEC;
   padding: 10em 0 3em;
+  //margin-bottom:100px;
   h3 {
     line-height: 24px;
     margin: 0;
@@ -202,5 +215,4 @@
     margin: 10px 0 16px 0;
     font-style: italic;
   }
-
 }

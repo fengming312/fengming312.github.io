@@ -28,7 +28,7 @@
 <!--网站导航sitenav-End-->
 
 <!--主导航nav-Begain-->
-<nav class="navbar navbar-default fm-nav">
+<nav class="navbar navbar-default fm-nav ">
     <div class="container">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
@@ -37,7 +37,7 @@
                 <span class="sr-only">Toggle navigation</span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
             </button>
             <a class="navbar-brand" href="#">
 
@@ -47,14 +47,17 @@
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-            <div class='ribbon'>
-                <a href='#'><span>Home</span></a>
-                <a href='#'><span>About Me</span></a>
-                <a href='#'><span>Skills</span></a>
-                <a href='#'><span>Interest</span></a>
+        <div class="collapse navbar-collapse " id="bs-example-navbar-collapse-1">
+            <div class='ribbon '>
+                <a href='#' id="home"><span>Home</span></a>
+                <a href='#' onclick="$('#about').animatescroll()"><span>About Me</span></a>
+                <a href='#' onclick="$('#skill').animatescroll()"><span>Skills</span></a>
+                <a href='#' onclick="$('#interest').animatescroll()"><span>Interest</span></a>
             </div>
         </div><!-- /.navbar-collapse -->
+        <div class="toTop hidden-md">
+            <a href="#" onclick="$('#home').animatescroll()"></a>
+        </div>
     </div><!-- /.container-fluid -->
 </nav>
 <!--主导航nav-End-->
@@ -83,7 +86,7 @@
 <!--轮播图banner-End-->
 
 <!--内容container-Begain-->
-<div class="about">
+<div class="about" id="about">
     <div class="container">
         <div class="about-info drop-shadow">
             <h3>About Me</h3>
@@ -116,7 +119,7 @@
 <!--内容container-End-->
 
 <!--页面主体main-Begain-->
-<div class="skills">
+<div class="skills" id="skill">
     <div class="container">
         <div class="skills-info">
             <h3>
@@ -156,7 +159,7 @@
 <!--页面主体main-End-->
 
 <!--侧栏sidebar-Begain-->
-<div class="interest">
+<div class="interest" id="interest">
     <div class="container">
         <div class="interest-info hidden-xs">
             <h3>Interest</h3>
@@ -164,11 +167,11 @@
             <div class="foucebox" >
                 <div class="bd">
                     <ul>
-                        <li><a href="#"><img  src="images/pic1.png"></a></li>
-                        <li><a href="#"><img  src="images/pic2.png"></a></li>
-                        <li><a href="#"><img  src="images/pic3.png"></a></li>
-                        <li><a href="#"><img  src="images/pic4.png"></a></li>
-                        <li><a href="#"><img  src="images/pic5.png"></a></li>
+                        <li><a href="javascript=void(0)"><img  src="images/pic1.png"></a></li>
+                        <li><a href="javascript=void(0)"><img  src="images/pic2.png"></a></li>
+                        <li><a href="javascript=void(0)"><img  src="images/pic3.png"></a></li>
+                        <li><a href="javascript=void(0)"><img  src="images/pic4.png"></a></li>
+                        <li><a href="javascript=void(0)"><img  src="images/pic5.png"></a></li>
                     </ul>
                 </div>
                 <div class="hd">
@@ -181,6 +184,158 @@
                         <li><a href="javascript:void(0)"><img  src="images/pic5.png"></a></li>
                     </ul>
                 </div>
+            </div>
+        </div>
+        <div id="page-wrap" style="margin-top: 100px" class="hidden-md" >
+            <div class="info-col">
+                <h2>Superman</h2>
+                <a class="image superman" href="javascript=void(0)">View Image</a>
+                <dl>
+                    <dt>Super Power</dt>
+                    <dd>Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                        aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                        commodo consequat.</dd>
+                    <dt>Costume</dt>
+                    <dd>Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                        aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                        commodo consequat.</dd>
+                    <dt>Morality</dt>
+                    <dd>Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                        aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                        commodo consequat.</dd>
+                    <dt>Sidekicks</dt>
+                    <dd>Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                        aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                        commodo consequat.</dd>
+                    <dt>Vehicles</dt>
+                    <dd>Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                        aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                        commodo consequat.</dd>
+                    <dt>Weaknesses</dt>
+                    <dd>Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                        aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                        commodo consequat.</dd>
+                </dl>
+            </div>
+            <div class="info-col">
+                <h2>Batman</h2>
+                <a class="image batman" href="javascript=void(0)">View Image</a>
+                <dl>
+                    <dt>Super Power</dt>
+                    <dd>Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                        aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                        commodo consequat.</dd>
+                    <dt>Costume</dt>
+                    <dd>Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                        aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                        commodo consequat.</dd>
+                    <dt>Morality</dt>
+                    <dd>Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                        aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                        commodo consequat.</dd>
+                    <dt>Sidekicks</dt>
+                    <dd>Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                        aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                        commodo consequat.</dd>
+                    <dt>Vehicles</dt>
+                    <dd>Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                        aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                        commodo consequat.</dd>
+                    <dt>Weaknesses</dt>
+                    <dd>Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                        aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                        commodo consequat.</dd>
+                </dl>
+            </div>
+            <div class="info-col">
+                <h2>Aquaman</h2>
+                <a class="image aquaman" href="javascript=void(0)">View Image</a>
+                <dl>
+                    <dt id="starter">Super Power</dt>
+                    <dd>Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                        aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                        commodo consequat.</dd>
+                    <dt>Costume</dt>
+                    <dd>Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                        aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                        commodo consequat.</dd>
+                    <dt>Morality</dt>
+                    <dd>Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                        aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                        commodo consequat.</dd>
+                    <dt>Sidekicks</dt>
+                    <dd>Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                        aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                        commodo consequat.</dd>
+                    <dt>Vehicles</dt>
+                    <dd>Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                        aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                        commodo consequat.</dd>
+                    <dt>Weaknesses</dt>
+                    <dd>Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                        aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                        commodo consequat.</dd>
+                </dl>
+            </div>
+            <div class="info-col">
+                <h2>Spiderman</h2>
+                <a class="image spiderman" href="javascript=void(0)">View Image</a>
+                <dl>
+                    <dt>Super Power</dt>
+                    <dd>Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                        aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                        commodo consequat.</dd>
+                    <dt>Costume</dt>
+                    <dd>Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                        aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                        commodo consequat.</dd>
+                    <dt>Morality</dt>
+                    <dd>Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                        aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                        commodo consequat.</dd>
+                    <dt>Sidekicks</dt>
+                    <dd>Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                        aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                        commodo consequat.</dd>
+                    <dt>Vehicles</dt>
+                    <dd>Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                        aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                        commodo consequat.</dd>
+                    <dt>Weaknesses</dt>
+                    <dd>Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                        aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                        commodo consequat.</dd>
+                </dl>
+            </div>
+            <div class="info-col">
+                <h2>Ironman</h2>
+                <a class="image ironman" href="javascript=void(0)">View Image</a>
+                <dl>
+                    <dt>Super Power</dt>
+                    <dd>Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                        aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                        commodo consequat.</dd>
+                    <dt>Costume</dt>
+                    <dd>Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                        aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                        commodo consequat.</dd>
+                    <dt>Morality</dt>
+                    <dd>Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                        aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                        commodo consequat.</dd>
+                    <dt>Sidekicks</dt>
+                    <dd>Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                        aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                        commodo consequat.</dd>
+                    <dt>Vehicles</dt>
+                    <dd>Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                        aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                        commodo consequat.</dd>
+                    <dt>Weaknesses</dt>
+                    <dd>Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                        aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                        commodo consequat.</dd>
+                </dl>
             </div>
         </div>
     </div>
@@ -196,6 +351,10 @@
 <script src="./lib/jquery/jquery.min.js"></script>
 <script src="./lib/bootstrap/js/bootstrap.min.js"></script>
 <script src="./lib/SuperSlide/jquery.SuperSlide.2.1.1.js"></script>
+<script src="./js/animatescroll.js"></script>
 <script src="./js/index.js"></script>
+<script>
+
+</script>
 </body>
 </html>
